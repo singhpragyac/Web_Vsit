@@ -4,9 +4,9 @@
 }
 
 .container {
-    width: 2000px;
+    height: 2000px;
     width: 100%;
-    background-color: rgb(189, 144, 231);
+    background-color: rgb(123, 25, 215);
 }
 
 /* HEADER SECTION */
@@ -32,11 +32,12 @@
 
 .top_header img {
     font-size: 50px;
-    color: white;
     float: left;
     padding: 25px;
     margin-left: 55px;
 }
+
+/* NAVBAR SECTION */
 
 .nav {
     height: 98px;
@@ -56,6 +57,11 @@
     font-size: 15px;
 }
 
+.nav ul li:hover {
+    background-color: #00c7fc;
+}
+
+
 
 .nav ul li a{
     color: #ffffff;
@@ -63,4 +69,83 @@
     font-weight: bold;
     padding: 38px 25px;
     text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* HEADER CONTANT */
+
+.header_content {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    margin-top: 60px;
+}
+
+.p1 {
+    font-size: 52px;
+    font-family: 'Open Sans', sans-serif;
+    color: #00c7fc;
+
+}
+
+.p2 {
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.p3 {
+    font-size: 28px;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* MAIN CONTENT SECTION */
+
+.main_content {
+    width: 100%;
+    height: 800px;
+    background-color: #f0f0f0;
+    padding: 50px 0px;
+}
+
+.main_content P {
+    text-align: center;
+    font-size: 36px;
+    color: #232121;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* MAIN CONTENT SECTION */
+
+.courses {
+    height: 98px;
+    width: 73%;
+    /* text-align: center; */
+}
+
+.courses ul {
+    list-style-type: none;
+}
+
+.courses ul li {
+    padding: 39px 0px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 20px;
+}
+
+.courses ul li a {
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #00c7fc;
+    color: black;
 }
