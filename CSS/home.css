@@ -27,6 +27,7 @@
     width: 100%;
     /* background-color:#00c7fc;  */
     /* opacity: 0.66;   */
+    /* background-attachment: fixed; */
 }
 
 
@@ -108,11 +109,12 @@
 /* MAIN CONTENT SECTION */
 
 .main_content {
+    height: 120px;
     width: 100%;
-    height: 800px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 50px 0px;
 }
+
 
 .main_content P {
     text-align: center;
@@ -122,12 +124,10 @@
 }
 
 
-/* MAIN CONTENT SECTION */
-
 .courses {
     height: 98px;
-    width: 73%;
-    /* text-align: center; */
+    width: 60%;
+    margin:auto;
 }
 
 .courses ul {
@@ -140,15 +140,56 @@
     float: left;
     text-align: center;
     font-size: 15px;
-    margin: 0 20px;
+    margin: 2px;
 }
 
 .courses ul li a {
     padding: 10px 18px;
     text-decoration: none;
-    background-color: #00c7fc;
+    /* background-color: #00c7fc; */
     color: black;
 }
-wfw
-35t3
-4y
+
+.courses ul li a:hover {
+    background-color: #00c7fc;
+    color:white;
+}
+
+
+/* COURSES IMAGES */
+
+.img_div {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+}
+
+.img_div img {
+    height: 200px;
+    width: 24%;
+    margin-left: 9px;
+    opacity: 0.8;
+}
+
+/* HIGHLIGHTS SECTION */
+
+.highlight {
+    height: 540px;
+    width: 100%;
+    background-color:rgb(0, 0, 0) ;
+}
+
+.highlight img {
+    float: left;
+    margin: 75px 0px 0px 130px; 
+}
+
+.highlight_box {
+    height: 300px;
+    width: 500px;
+    float: right;
+    background-color: rgb(28, 87, 123);
+    color: white;   
+}
+
