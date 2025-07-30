@@ -320,7 +320,7 @@
 /* CONTACT US */
 
 .form_container {
-    height: 680px;
+    height: 780px;
     width: 100%;
     padding-top: 80px;
     background-color: rgb(255, 255, 255);
@@ -393,4 +393,68 @@
     margin-top: 20px;
     float: left;
 
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+    height: 550px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer_col {
+    height:500px;
+    width: 30%;
+    background-color: palevioletred;
+    float: left;
+    margin: 21px;
+}
+
+
+
+.class_p {
+    text-align: center;
+    padding: 16px;
+    font-size: 25px;
+    color: rgb(61, 61, 170);
+}
+
+.class_p:hover {
+    color: gray;
+}
+
+.footer_col ul {
+    color: white;
+}
+
+
+
+
+.footer_col ul li {
+    width: 150px;
+    margin-left: 100px;
+    /* background-color: rgb(117, 181, 117); */
+    border-bottom: 1px dotted white;
+    font-size: 17px;
+    color: rgb(61, 61, 170);
+}
+
+.footer_col ul li:hover {
+    color: gray;
+}
+
+
+.footer_col ul li a {
+    text-decoration: none;
+}
+
+
+
+.connected_icon {
+    height: 25px;
+    width: 25px;
+    /* background-color: white; */
 }
