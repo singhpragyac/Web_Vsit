@@ -4,9 +4,9 @@
 }
 
 .container {
-    height: 2000px;
+    height: a;
     width: 100%;
-    background-color: rgb(123, 25, 215);
+    background-color: rgb(255, 255, 255);
 }
 
 /* HEADER SECTION */
@@ -236,10 +236,10 @@
 /* UPCOMING CLASSES */
 
 .class_banner{
-    height: 400px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+        padding: 100px 0px;
     background-image: linear-gradient(TO right,rgba(0, 0, 0, 0.8)), url("/images/banner_for courses.avif");
 }
 
@@ -248,7 +248,7 @@
     width: 92%;
     background-color:#096c89;
     margin: auto auto;
-    margin-top: 20px;
+   
 }
 
 .class_col_01 {
@@ -285,18 +285,75 @@
 
 /* TESTIMONIALS SECTION */
 
+.testmonials_01 {
+    height: 500px;
+    width: 42%;
+    /* background-color: aqua; */
+    display: block;
+    margin: 90px 0px 0px 150px;
+}
 
+.testmonial_p1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.testmonial_p2 {
+    text-align: center;
+    color: gray;
+}
+
+.student_img_1 {
+    /* height: 300px;
+    width: 150px; */
+    padding: 30px;
+    /* background-color: green; */
+    float: left;
+
+}
+
+.student_img_1 img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.communicate {
+    height: 300px;
+    width: 330px;
+    float: right;
+    padding-top: 30px;
+    /* background-color: #337ab7; */
+}   
+
+.commu_01 {
+    margin-top: 40px;
+    font-size: 15px;
+    color: #2b2929;
+}
+.name_01 {
+    margin-left: 210px;
+    margin-top: 10px;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
 
 
 
 /* FACEBOOK SECTION */
 .facebook {
     height: 400px;
-    width: 300px;
+    width: 40%;
     float: right;
-    margin: 50px 150px 0px 0px;
+    margin: -500px 0px 0px 0px;
 }
 
+
+#fb_lable {
+    font-size: 25px;
+    margin-left: 40px;
+    /* font-weight: 100; */
+}
 
 /* BOTTOM QUOTES SECTION */
 
@@ -399,35 +456,37 @@
 /* FOOTER SECTION */
 
 .footer {
-    height: 550px;
+    height: 390px;
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: white;
+    padding:60px 0px;
 }
 
 .footer_col {
-    height:500px;
+    height:311px;
     width: 30%;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     float: left;
     margin: 21px;
 }
 
 
 
-.class_p {
+.course_p {
     text-align: center;
     padding: 16px;
     font-size: 25px;
-    color: rgb(61, 61, 170);
+    color: #337ab7;
 }
 
-.class_p:hover {
+
+.course_p:hover {
     color: gray;
 }
 
 .footer_col ul {
-    color: white;
+    color: rgb(135, 106, 106);
 }
 
 
@@ -439,10 +498,15 @@
     /* background-color: rgb(117, 181, 117); */
     border-bottom: 1px dotted white;
     font-size: 17px;
-    color: rgb(61, 61, 170);
+   
 }
 
-.footer_col ul li:hover {
+.footer_col ul li a {
+    color: #337ab7;
+}
+
+
+.footer_col ul li a:hover {
     color: gray;
 }
 
@@ -456,5 +520,80 @@
 .connected_icon {
     height: 25px;
     width: 25px;
-    /* background-color: white; */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20%;
+    /* color: white; */
+}
+
+.connected_icon:hover {
+    background-color: #00c7fc;
+}
+
+
+.Reserved_vsit {
+    margin-top: 55px;
+    font-size: 18px;
+}
+
+.footer_vsit {
+    color: #00c7fc;
+    text-decoration: none;
+}
+
+
+.footer_vsit:hover {
+    color: gray;
+}
+
+
+
+.term_policy {
+    color: #337ab7;
+}
+
+.term_policy a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.term_policy a:hover {
+    color: gray;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    height: 80px;
+    width: 200px;
+    float: right;
+    margin-top: -140px;
+    margin-right: 10px;
+}
+
+/* CODERMANTRA */
+
+.codermantra {
+    height: 50px;
+    width: 280px;
+    background-color: rgb(245, 159, 29);
+    text-align: center;
+    border-radius: 24px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+}
+
+.codermantra a {
+    text-decoration: none;
+    color: #00c7fc;
+    
+}
+
+.mantra {
+    font-size: 33px;
+    line-height: 0.5;
+    color: white;
 }
