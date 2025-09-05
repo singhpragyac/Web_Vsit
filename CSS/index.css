@@ -82,6 +82,23 @@
 
 /* HEADER CONTANT */
 
+
+    /* ADDING ANIMATION  */
+
+@keyframes slideInRight {
+0% {
+    /* -webkit-transform: translateX(100%); */
+    transform: translateX(100%);
+    /* visibility: visible; */
+}
+100% {
+    /* -webkit-transform: translateX(0); */
+    transform: translateX(0);
+}
+} 
+
+
+
 .header_content {
     width: 100%;
     height: 400px;
@@ -89,6 +106,9 @@
     padding-top: 150px;
     color: white;
     margin-top: 60px;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .p1 {
@@ -118,19 +138,48 @@
     padding: 50px 0px;
 }
 
+@keyframes slideoutdown {
+    0% {
+        /* -webkit-transform: translateX(100%); */
+        transform: translateY(0);
+        /* visibility: visible; */
+    }
+    100% {
+        /* -webkit-transform: translateX(0); */
+        transform: translateY(40%);
+    }
+} 
 
 .main_content P {
     text-align: center;
     font-size: 30px;
     color: #514a4a;
     font-family: 'Open Sans', sans-serif;
+    animation-name: slideoutdown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
+
+@keyframes slideinleft {
+    0% {
+        /* -webkit-transform: translateX(100%); */
+        transform: translateX(0);
+        /* visibility: visible; */
+    }
+    100% {
+        /* -webkit-transform: translateX(0); */
+        transform: translateX(10%);
+    }
+} 
 
 
 .courses {
     height: 98px;
     width: 60%;
     margin:auto;
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .courses ul {
@@ -183,6 +232,41 @@
     background-color:rgb(34, 33, 33) ;
 }
 
+@keyframes vsitinleft {
+    0% {
+        /* -webkit-transform: translateX(100%); */
+        transform: translateX(-100%);
+        /* visibility: visible; */
+    }
+    100% {
+        /* -webkit-transform: translateX(0); */
+        transform: translateX(0);
+    }
+} 
+
+
+
+.VSITians_img {
+    margin:75px 0px 0px 130px;
+    animation-name: vsitinleft;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+
+
+
+@keyframes highlightinleft {
+    0% {
+        /* -webkit-transform: translateX(100%); */
+        transform: translateX(10%);
+        /* visibility: visible; */
+    }
+    100% {
+        /* -webkit-transform: translateX(0); */
+        transform: translateX(0);
+    }
+} 
 
 .highlight_box {
     padding: 30px 100px;
@@ -190,6 +274,9 @@
     background-color: #096c89;
     color: white;
     margin-top:80px;
+    animation-name: highlightinleft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .highlight_box p {
@@ -211,11 +298,26 @@
 
 /* ABOUT SECTION  */
 
+
+
+@keyframes aboutup {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 .about_content {
     height: 120px;
     width: 100%;
     background-color: #ffffff;
     padding: 50px 0px;
+    animation-name: aboutup;
+    animation-timing-function: 1s;
+    animation-fill-mode: both;
 }
 
 
@@ -254,6 +356,17 @@
    
 }
 
+@keyframes upcomingclass {
+    0% {
+        transform: translateX(0);
+        visibility: hidden;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 .class_col_01 {
     height: 140px;
     width: 250px;
@@ -264,6 +377,10 @@
     margin: 20px;
     text-align: center;
     font-weight: bold;
+    animation-name: upcomingclass;
+    animation-timing-function: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 }
 
 .courses_name {
@@ -306,6 +423,26 @@
     color: gray;
 }
 
+@keyframes Bhavan_rakesh {
+    0% {
+        transform: translateX(-15%);
+        /* visibility: hidden; */
+    }
+    100% {
+        transform: translateX(5%);
+    }
+}
+
+
+.Bhavan_rakesh {
+    animation-name: Bhavan_rakesh;
+    animation-timing-function: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+
+
 .student_img_1 {
     /* height: 300px;
     width: 150px; */
@@ -344,11 +481,25 @@
 
 
 /* FACEBOOK SECTION */
+
+@keyframes facebook {
+    0% {
+        transform: translateX(15%);
+        /* visibility: hidden; */
+    }
+    100% {
+        transform: translateX(5%);
+    }
+}
 .facebook {
     height: 400px;
     width: 40%;
     float: right;
     margin: -500px 0px 0px 0px;
+    animation-name: facebook;
+    animation-timing-function: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
 }
 
 
@@ -360,21 +511,42 @@
 
 /* BOTTOM QUOTES SECTION */
 
+
+  @keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+  }
+
 .quotes_div {
     padding: 80px;
     background-color: rgb(34, 33, 33);
     text-align: center;
+   
 }
 
 .quotes {
     color: #00c7fc;
     font-size: 35px;
     font-weight: 600;
+    animation-name: zoomIn;
+    animation-timing-function: 1s;
+    /* animation-delay: 2s; */
+    animation-fill-mode: both;
 }
 
 .demo {
     color: white;
     font-size: 14px;
+    animation-name: zoomIn;
+    animation-timing-function: 1s;
+    /* animation-delay: 2s; */
+    animation-fill-mode: both;
 }
 
 /* CONTACT US */
